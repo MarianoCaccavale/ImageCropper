@@ -102,7 +102,7 @@ class ImageCropper {
     if (resultPath == null) return null;
 
     var splitResult = resultPath.split("|\\|");
-    
+    splitResult[5] = splitResult[5].replaceAll(',', '.');
     double tmpAngle = double.parse(splitResult[5]);
     int tmpAngleCorr = tmpAngle.toInt();
     
