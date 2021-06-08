@@ -103,7 +103,7 @@ class ImageCropper {
 
     var splitResult = resultPath.split("|\\|");
     
-    double tmpAngle = Double.parse(splitResult[5]);
+    double tmpAngle = double.parse(splitResult[5]);
     int tmpAngleCorr = tmpAngle.toInt();
     
 
